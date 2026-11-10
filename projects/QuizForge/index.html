@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QuizForge | Programming Challenge</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="index.html"><span class="mark">&lt;/&gt;</span> Quiz<span>Forge</span></a><span class="eyebrow">CODE • THINK • LEVEL UP</span></header>
+<main class="shell">
+<section id="welcome" class="panel hero"><div class="pill">INTERACTIVE CODING CHALLENGE</div><h1>Put your coding <em>knowledge</em> to the test.</h1><p>Take on 15 questions across HTML, CSS, JavaScript, Python, and MySQL. Each question has a 20-second timer. Earn points, learn from feedback, and beat your personal best.</p><div class="features"><span>⚡ 15 questions</span><span>⏱ 20 seconds each</span><span>🏆 Saved high score</span></div><div class="best">PERSONAL BEST <strong id="homeBest">0 / 15</strong></div><button id="startBtn" class="primary">Start Challenge <span aria-hidden="true">→</span></button></section>
+<section id="quiz" class="panel hidden" aria-live="polite"><div class="quiztop"><span id="counter">QUESTION 1 / 15</span><span class="timer" id="timer">⏱ 20s</span></div><div class="progress" role="progressbar" aria-label="Quiz progress" aria-valuemin="0" aria-valuemax="15" aria-valuenow="0" id="progressTrack"><div id="progressFill"></div></div><div class="topic" id="topic">HTML</div><h2 id="question">Question</h2><div id="answers" class="answers"></div><div id="feedback" class="feedback" role="status"></div><div class="quizbottom"><span id="liveScore">Score: 0</span><button id="nextBtn" class="primary" disabled>Next Question →</button></div></section>
+<section id="results" class="panel result hidden"><div class="pill">CHALLENGE COMPLETE</div><div class="medal">🏆</div><h2 id="resultTitle">Well done!</h2><div class="bigscore" id="finalScore">0 / 15</div><p id="resultText"></p><div class="statgrid"><div><span>Correct</span><strong id="correctCount">0</strong></div><div><span>Accuracy</span><strong id="accuracy">0%</strong></div><div><span>Personal Best</span><strong id="resultBest">0 / 15</strong></div></div><button id="restartBtn" class="primary">Try Again ↻</button></section>
+</main><footer>Built by Oluwafemi Ezekiel · COS 106 Portfolio Project · HTML / CSS / JavaScript</footer>
+</body></html>
